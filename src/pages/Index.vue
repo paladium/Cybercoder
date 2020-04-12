@@ -19,7 +19,12 @@
                 </div>
             </g-link>
         </div>
-        <Pager :info="$page.posts.pageInfo" />
+        <pagination-posts
+            v-if="$page.posts.pageInfo.totalPages > 1"
+            base="/"
+            :totalPages="$page.posts.pageInfo.totalPages"
+            :currentPage="$page.posts.pageInfo.currentPage"
+        />
     </Layout>
 </template>
 
@@ -47,10 +52,10 @@ query Posts($page: Int){
 </page-query>
 
 <script>
-import { Pager } from "gridsome";
+import PaginationPosts from "../components/PaginationPosts";
 export default {
     components: {
-        Pager
+        PaginationPosts
     },
     metaInfo: {
         title: "Welcome to Future"
