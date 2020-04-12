@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <main class="container w-full md:max-w-md mx-auto pt-20 px-5">
+        <main class="container w-full mx-auto pt-20 px-5">
             <slot />
         </main>
         <footer class="bg-white border-b border-gray-200 text-black">
