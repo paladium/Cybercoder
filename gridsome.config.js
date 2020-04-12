@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-    siteName: "Cybercode",
+    siteName: "Cybercoder",
     siteUrl: "https://cybercoder.io",
     siteDescription: "Fun programming tutorials in future 🚀",
     icon: "src/favicon.png",
