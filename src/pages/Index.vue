@@ -1,30 +1,24 @@
 <template>
     <Layout>
-        <div class="max-w-md my-8 rounded overflow-hidden shadow-lg m-auto"
+        <div
+            class="max-w-md my-8 rounded overflow-hidden shadow-lg m-auto"
             v-for="post in $page.posts.edges"
-            :key="post.node.path">
-
-       
-        <g-link
-            
-            :to="post.node.path"
+            :key="post.node.path"
         >
-            <div class="px-6 py-4">
-                <h1 class="break-normal pt-6 pb-2 text-3xl md:text-4xl">{{post.node.title}}</h1>
-            </div>
-
-            <div v-if="post.node.coverImage">
-                <img :src="post.node.coverImage" alt />
-                Gif by Giphy
-            </div>
-            <div class="px-6 py-4">
-                <p
-                    class="text-sm md:text-base font-normal text-grey-dark"
-                >Published {{post.node.date}}</p>
-                <div class="break-normal pt-2 text-lg" v-html="post.node.excerpt"></div>
-            </div>
-        </g-link>
-         </div>
+            <g-link :to="post.node.path">
+                <div v-if="post.node.coverImage">
+                    <img :src="post.node.coverImage" alt />
+                    <p class="text-center">Gif by Giphy</p>
+                </div>
+                <div class="px-6 py-4">
+                    <h1 class="break-normal pt-6 pb-2 text-2xl md:text-2xl">{{post.node.title}}</h1>
+                    <p
+                        class="text-sm md:text-base font-normal text-grey-dark"
+                    >Published {{post.node.date}}</p>
+                    <div class="break-normal pt-2 text-lg" v-html="post.node.excerpt"></div>
+                </div>
+            </g-link>
+        </div>
         <Pager :info="$page.posts.pageInfo" />
     </Layout>
 </template>
