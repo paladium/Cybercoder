@@ -192,6 +192,7 @@
 
 .markdown-body a {
     background-color: transparent;
+    color: blue;
 }
 
 .markdown-body a:active,
