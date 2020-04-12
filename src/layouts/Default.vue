@@ -13,8 +13,10 @@
 
                     <div class="flex flex-grow lg:w-3/4 xl:w-4/5">
                         <div class="flex items-center justify-between w-1/4 px-6">
-                            <div class="flex justify-start items-center">
-                                
+                            <div class="flex justify-end items-center">
+                                <g-link>
+                                    About
+                                </g-link>
                             </div>
                         </div>
                     </div>

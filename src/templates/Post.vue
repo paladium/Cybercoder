@@ -1,6 +1,13 @@
 <template>
     <Layout>
-        <div v-html="$page.post.content"></div>
+        <div class="container-inner mx-auto my-16">
+            <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
+            <div class="text-xl text-gray-600 mb-4">{{ $page.post.date }}</div>
+            <div class="markdown-body mb-8" v-html="$page.post.content" />
+            <div class="mb-8">
+                <g-link to="/" class="font-bold uppercase">Back to Blog</g-link>
+            </div>
+        </div>
     </Layout>
 </template>
 
@@ -16,10 +23,11 @@ query Post ($path: String!){
 </page-query>
 <script>
 export default {
-    metaInfo(){
+    metaInfo() {
         return {
             title: this.$page.post.title
         };
     }
-}
+};
 </script>
+<style src="../css/github-markdown.css"></style>

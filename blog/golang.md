@@ -5,6 +5,6 @@ excerpt: Today we will explore some cool features of Golang
 coverImage: https://media3.giphy.com/media/dJxcyF2CRY9nsM2LlL/giphy.gif
 ---
 
-## Golang exploration
+### Golang exploration
 
 Exploring golang
