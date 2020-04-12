@@ -19,6 +19,9 @@ module.exports = {
             path: "blog/**/*.md",
             typeName: "Post"
           },
+      },
+      {
+          use: "gridsome-plugin-tailwindcss"
       }
   ]
 }
