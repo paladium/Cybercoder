@@ -14,9 +14,9 @@
                     <div class="flex flex-grow lg:w-3/4 xl:w-4/5">
                         <div class="flex items-center justify-between w-1/4 px-6">
                             <div class="flex justify-end items-center">
-                                <g-link>
+                                <!-- <g-link>
                                     About
-                                </g-link>
+                                </g-link> -->
                             </div>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
             </div>
         </div>
 
-        <main class="container w-full md:max-w-md mx-auto pt-20">
+        <main class="container w-full md:max-w-md mx-auto pt-20 px-5">
             <slot />
         </main>
     </div>
