@@ -1,0 +1,11 @@
+---
+application:
+  name: "cybercoder"
+  project: "test-project-az"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-cybercoder"
+  routes:
+  - application_name: "cybercoder"
+    paths:
+    - "/*"
