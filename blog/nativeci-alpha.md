@@ -2,7 +2,7 @@
 title: NativeCI alpha released
 date: 3 July 2021
 excerpt: A CI/CD for go applications
-coverImage: ./images/nativeci.png
+coverImage: https://media3.giphy.com/media/pVRa0NoY0NiGyDLJGq/giphy.gif
 ---
 
 ### What is NativeCI?
